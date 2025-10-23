@@ -55,4 +55,5 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
             cd /home/user/fullstasck-devops-app/backend/dev
-            sudo docker compose up -d --force-recreate --pull always
+            sudo docker compose pull backend-api
+            sudo docker compose up -d --force-recreate backend-api

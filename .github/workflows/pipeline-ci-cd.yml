@@ -54,5 +54,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            sudo cd /home/user/fullstasck-devops-app/backend/dev
-            sudo docker compose up -d --force-recreate --pull always
+            sudo su
+            cd /home/user/fullstasck-devops-app/backend/dev
+            docker compose up -d --force-recreate --pull always

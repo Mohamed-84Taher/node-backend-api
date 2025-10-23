@@ -34,5 +34,5 @@ jobs:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: List images
-        run: docker images
+      - name: Push Docker image to Docker Hub
+        run: docker push moahemdtaher/api-backend

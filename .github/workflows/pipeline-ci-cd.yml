@@ -8,7 +8,7 @@ on:
 env:
   BUILD_NUMBER: ${{ github.run_number }}
   IMAGE_NAME: ${{ vars.DOCKERHUB_USERNAME }}/api-backend
-  PROJECT_PATH: /home/user/fullstack-devops-app/backend/dev
+  PROJECT_PATH: /home/user/fullstasck-devops-app/backend/dev
   DOCKER_SERVICE: backend-api
 
 jobs:
